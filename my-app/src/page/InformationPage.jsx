@@ -18,7 +18,7 @@ const InformationPage = (props) =>{
     }, );
     
     return(<div>
-        <h1>InformationPage</h1>
+       
         <ShowData InfoPost={InfoPost}  InfoComment={InfoComment} />
         
         

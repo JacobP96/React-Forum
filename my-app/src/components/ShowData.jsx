@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../components/Body/body.css"
 const ShowData = (props) =>{
     
 
@@ -6,8 +7,9 @@ const ShowData = (props) =>{
        
         return (
             
-          <div>
-            <div>
+          <div className="InfoText">
+            <h1>Post and comment information about # {props.InfoPost.id}</h1>
+           <div>
                 <p>
               <strong>Post-ID:</strong> {props.InfoPost.id}
             </p>
@@ -29,10 +31,10 @@ const ShowData = (props) =>{
               <strong>Comment-Text:</strong> {props.InfoComment.body}
             </p>
             </div>
-           <Link to="/">
+           <Link className="button" to="/">
            <button>Tillbaka till startsidan</button>
            </Link>
-           
+          
           </div>
         );
     

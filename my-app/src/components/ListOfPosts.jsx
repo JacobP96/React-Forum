@@ -1,20 +1,28 @@
 import { Link } from "react-router-dom";
+import "./Body/body.css"
 
 const ListOfPosts = (props) =>{
-    return(<div>
-        <ol>
+    return(<div className="body">
+        
+        <ul>
+           
             {props.posts.map((post,i)=>{
                 return(
-                    <Link key={i} to={{
+                    <div>
+                  <p> Post: {post.id}</p> 
+                    <Link className="link" key={i} to={{
                         pathname:`/post/${post.id}`,
                         PostInfo:{...post}
                     }}>
-<li >{post.title}</li>
+                    
+<li > {post.title} </li>
 </Link>
+
+</div>
                 )
 
             })}
-        </ol>
+        </ul>
         
     </div>)
 }

@@ -1,0 +1,25 @@
+li {
+  color: black;
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+}
+li:hover {
+  color: white;
+}
+.body {
+  background-color: gray;
+}
+.link {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+.button {
+  color: blue;
+}
+.InfoText {
+  background-color: gray;
+}

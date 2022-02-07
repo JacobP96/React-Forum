@@ -1,0 +1,11 @@
+.footer {
+  background-color: #343434;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: auto;
+}
+.FooterText {
+  text-align: left;
+  color: white;
+}

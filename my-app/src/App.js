@@ -3,6 +3,8 @@ import HomePage from "./page/HomePage"
 import InformationPage from './page/InformationPage';
 import {Switch,Route} from "react-router-dom"
 import {useEffect,useState} from "react"
+import Header from "./Header/header"
+import Footer from "./Footer/footer"
 function App() {
   const [posts,setPosts] = useState([])
  
@@ -14,6 +16,7 @@ function App() {
   
   return (
     <div className="App">
+      <Header/>
       <Switch>
         <Route exact
           path="/"
@@ -22,6 +25,7 @@ function App() {
           path="/post/:id"
           render={(props) => <InformationPage {...props} />}/>
       </Switch>
+      <Footer/>
     </div>
   );
 }
