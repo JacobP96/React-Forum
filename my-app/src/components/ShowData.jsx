@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../components/Body/body.css"
+import "../Body/body.css"
 const ShowData = (props) =>{
     
 
@@ -8,31 +8,31 @@ const ShowData = (props) =>{
         return (
             
           <div className="InfoText">
-            <h1>Post and comment information about # {props.InfoPost.id}</h1>
+            <h1 className="PostCommentHeader">Post and comment information about # {props.InfoPost.id}</h1>
            <div>
                 <p>
-              <strong>Post-ID:</strong> {props.InfoPost.id}
+              <strong className="PostCommentStrong">Post-ID:</strong> {props.InfoPost.id}
             </p>
               <p>
-              <strong>Post-title:</strong> {props.InfoPost.title}
+              <strong className="PostCommentStrong">Post-title:</strong> {props.InfoPost.title}
             </p>
                <p>
-              <strong>Post-text:</strong> {props.InfoPost.body}
+              <strong className="PostCommentStrong">Post-text:</strong> {props.InfoPost.body}
             </p>
             </div>
             <div>
             <p>
-              <strong>Name:</strong> {props.InfoComment.name}
+              <strong className="PostCommentStrong">Name:</strong> {props.InfoComment.name}
             </p>
             <p>
-              <strong>Email:</strong> {props.InfoComment.email}
+              <strong className="PostCommentStrong">E-mail:</strong> {props.InfoComment.email}
             </p>
             <p>
-              <strong>Comment-Text:</strong> {props.InfoComment.body}
+              <strong className="PostCommentStrong">Comment-Text:</strong> {props.InfoComment.body}
             </p>
             </div>
            <Link className="button" to="/">
-           <button>Tillbaka till startsidan</button>
+           <button className="BTN">Tillbaka till startsidan</button>
            </Link>
           
           </div>

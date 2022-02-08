@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./Body/body.css"
+import "../Body/body.css"
 
 const ListOfPosts = (props) =>{
     return(<div className="body">
@@ -8,13 +8,13 @@ const ListOfPosts = (props) =>{
            
             {props.posts.map((post,i)=>{
                 return(
-                    <div>
-                  <p> Post: {post.id}</p> 
+                    <div className="DesignPosts">
+                  
                     <Link className="link" key={i} to={{
                         pathname:`/post/${post.id}`,
                         PostInfo:{...post}
                     }}>
-                    
+               <li> Post: {post.id}</li>      
 <li > {post.title} </li>
 </Link>
 

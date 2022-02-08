@@ -1,11 +1,9 @@
 .footer {
-  background-color: #343434;
+  background-color: #05386b;
   border-radius: 5px;
-  padding: 10px;
-  border: 1px solid black;
-  margin: auto;
+  border: 1px solid #edf5e1;
 }
 .FooterText {
   text-align: left;
-  color: white;
+  color: #edf5e1;
 }

@@ -1,11 +1,11 @@
 .header {
-  background-color: #343434;
+  background-color: #05386b;
   border-radius: 5px;
   padding: 10px;
   border: 1px solid black;
 }
 .HeaderText {
-  color: #ffffff;
+  color: #edf5e1;
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   font-weight: 800;
@@ -15,7 +15,7 @@
   text-transform: uppercase;
 }
 .HeaderSecondText {
-  color: #ffffff;
+  color: #edf5e1;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 800;
